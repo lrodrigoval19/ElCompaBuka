@@ -6,17 +6,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --black: #100908;       /* Fondo principal oscuro tipo carbón */
-  --panel: #1b1210;       /* Fondo secundario de tarjetas */
-  --panel2: #241512;      /* Fondo alternativo de paneles */
-  --red: #c9161d;         /* Rojo principal de la marca */
-  --red2: #8f080d;        /* Rojo oscuro para sombras */
-  --orange: #f26b16;      /* Naranja fuego */
-  --gold: #ffbd35;        /* Dorado / amarillo para precios y acentos */
-  --cream: #fff1d2;       /* Blanco crema para títulos suaves */
-  --muted: #c5b9b1;       /* Gris cálido para textos secundarios */
-  --line: rgba(255, 190, 80, .17); /* Color de líneas divisoras */
-  --max: 1160px;          /* Ancho máximo del contenido en pantallas grandes */
+  --black: #100908;                 /* Fondo principal oscuro tipo carbón */
+  --panel: #1b1210;                 /* Fondo secundario de tarjetas */
+  --panel2: #241512;                /* Fondo alternativo de paneles */
+  --red: #c9161d;                   /* Rojo principal de la marca */
+  --red2: #8f080d;                  /* Rojo oscuro para sombras */
+  --orange: #f26b16;                /* Naranja fuego */
+  --gold: #ffbd35;                  /* Dorado / amarillo para precios y acentos */
+  --cream: #fff1d2;                 /* Blanco crema para títulos suaves */
+  --muted: #c5b9b1;                 /* Gris cálido para textos secundarios */
+  --line: rgba(255, 190, 80, .17);  /* Color de líneas divisoras */
+  --max: 1160px;                    /* Ancho máximo del contenido en pantallas grandes */
 }
 
 /* ==========================================================================
@@ -30,8 +30,8 @@
 }
 
 html {
-  scroll-behavior: smooth;     /* Hace que al dar clic en el menú baje suavemente */
-  scroll-padding-top: 90px;    /* Evita que el menú fijo tape los títulos al saltar */
+  scroll-behavior: smooth;          /* Hace que al dar clic en el menú baje suavemente */
+  scroll-padding-top: 90px;         /* Evita que el menú fijo tape los títulos al saltar */
 }
 
 body {
@@ -54,7 +54,7 @@ a {
 
 /* ==========================================================================
    3. ENCABEZADO Y MENÚ SUPERIOR (.topline, .site-header)
-   Afecta: La barra fija de arriba, el logo en texto y los links de navegación
+   Afecta: La barra fija de arriba, el logo en texto/imagen y los links de navegación
    ========================================================================== */
 .topline {
   height: 5px;
@@ -97,6 +97,15 @@ a {
   border-radius: 50%;
   font-size: 15px;
   box-shadow: 0 0 20px #e9472633;
+  overflow: hidden;               /* Recorta la imagen para que respete el círculo */
+}
+
+/* Hace que la imagen del logo en la barra llene el círculo sin estirarse */
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand-name {
@@ -293,8 +302,8 @@ h1 em, h2 em {
 }
 
 /* ==========================================================================
-   5. EMBLEMA CIRCULAR Y SELLO DEL HERO (.hero-art, .logo-emblem, .stamp)
-   Afecta: El círculo derecho de la portada con el texto "EL COMPA BUKA"
+   5. EMBLEMA CIRCULAR / IMAGEN DEL LOGO Y SELLO DEL HERO (.hero-art, .logo-frame, .stamp)
+   Afecta: El círculo derecho de la portada donde va el logotipo de la marca
    ========================================================================== */
 .hero-art {
   min-height: 460px;
@@ -323,7 +332,7 @@ h1 em, h2 em {
   display: grid;
   place-items: center;
   background: radial-gradient(circle at 50% 35%, #a51b12 0%, #520b09 52%, #190807 100%);
-  padding: 28px;
+  padding: 0;
 }
 
 .logo-frame:after {
@@ -335,69 +344,15 @@ h1 em, h2 em {
   pointer-events: none;
 }
 
-.logo-emblem {
+/* Muestra la imagen del logotipo completa sin recortar sus bordes ni su sello */
+.logo-frame img {
   width: 100%;
   height: 100%;
-  border: 2px solid #ffbd35;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 24px;
-  background: linear-gradient(145deg, #2a0b08aa, #080505cc);
-  box-shadow: inset 0 0 0 9px #f26b161c, inset 0 0 35px #000;
+  object-fit: contain;
+  display: block;
 }
 
-.emblem-kicker {
-  font-size: clamp(10px, 1.2vw, 14px);
-  font-weight: 800;
-  letter-spacing: 5px;
-  color: #ffe4b2;
-}
-
-.emblem-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: clamp(25px, 4vw, 42px);
-  font-weight: 900;
-  line-height: 1.05;
-  color: #fff2d7;
-  text-shadow: 2px 3px 0 #7b100c;
-}
-
-.logo-emblem strong {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: clamp(65px, 9vw, 112px);
-  font-weight: 900;
-  line-height: .9;
-  letter-spacing: -3px;
-  color: #ffbd35;
-  -webkit-text-stroke: 1px #fff0c5;
-  text-shadow: 4px 5px 0 #8f080d, 7px 9px 0 #080505;
-}
-
-.emblem-tagline {
-  margin-top: 14px;
-  padding: 5px 14px;
-  background: #b80e16;
-  border: 1px solid #ffbd35;
-  color: #fff2d7;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(13px, 1.7vw, 19px);
-  letter-spacing: 2px;
-}
-
-.emblem-flame {
-  margin-top: 13px;
-  color: #f58a28;
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-/* Sello dorado inclinado */
+/* Sello dorado inclinado (si decides usarlo junto con emblema tipográfico) */
 .stamp {
   position: absolute;
   right: 0;
