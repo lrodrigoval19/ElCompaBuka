@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquería El Compa Buka</title>
+    <!-- Descripción corta para buscadores (SEO local) -->
+    <meta name="description" content="Disfruta los mejores tacos de carne asada al carbón, arrachera, picaña, rib eye, quesabirrias, chile embarazado y papa rellena en Col. Piletas, León, Guanajuato.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Carga de tipografías desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- =====================================================================
+         1. BARRA SUPERIOR Y NAVEGACIÓN (Se queda fija arriba al bajar)
+         Afecta: El encabezado superior, el nombre de la marca y el menú rápido
+         ===================================================================== -->
+    <div class="topline"></div>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <!-- Nombre / Logotipo en texto de la taquería -->
+            <a href="#inicio" class="brand">
+                <span class="brand-mark">🔥</span>
+                <span class="brand-name">EL COMPA <b>BUKA</b></span>
+            </a>
+
+            <!-- Enlaces que saltan a cada sección de la página -->
+            <nav class="nav-links">
+                <a href="#especialidades">Especialidades</a>
+                <a href="#menu">Menú</a>
+                <a href="#ubicacion">Ubicación</a>
+                <!-- Botón directo a WhatsApp desde el menú -->
+                <a href="https://wa.me/524770000000?text=Hola%20Compa%20Buka,%20quiero%20hacer%20un%20pedido" target="_blank" class="nav-cta">
+                    Pedir <span>WA</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         2. PORTADA PRINCIPAL / HERO (Primera impresión al entrar)
+         Afecta: Título grande, descripción inicial, botones y emblema circular
+         ===================================================================== -->
+    <section id="inicio" class="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-layout">
+            
+            <!-- Columna izquierda: Textos y botones de acción -->
+            <div>
+                <p class="eyebrow"><span class="fire-dot"></span>Auténtico sabor al carbón en León, Gto.</p>
+                <h1>TACOS DE ASADA <br><em>EL COMPA BUKA</em></h1>
+                <p class="hero-lead">
+                    Cortes selectos a la parrilla, porciones bien servidas y salsas caseras hechas al día. Sin filas eternas y con precios claros.
+                </p>
+
+                <!-- Botones principales: Pedir por WhatsApp o bajar a ver el menú -->
+                <div class="hero-actions">
+                    <a href="https://wa.me/524770000000?text=Hola%20Compa%20Buka,%20me%20gustaría%20pedir%20a%20domicilio" target="_blank" class="btn btn-hot">
+                        Pedir por WhatsApp <span>→</span>
+                    </a>
+                    <a href="#menu" class="btn btn-outline">Ver Menú y Precios</a>
+                </div>
+
+                <!-- Notas rápidas de confianza (pagos y entrega) -->
+                <div class="hero-notes">
+                    <span>• Aceptamos Efectivo y Transferencia</span>
+                    <span>• Para llevar y a domicilio</span>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Emblema tipográfico circular (sin depender de imágenes) -->
+            <div class="hero-art">
+                <div class="art-ring"></div>
+                <div class="logo-frame">
+                    <div class="logo-emblem">
+                        <span class="emblem-kicker">TAQUERÍA</span>
+                        <span class="emblem-name">EL COMPA</span>
+                        <strong>BUKA</strong>
+                        <span class="emblem-tagline">TACOS DE ASADA</span>
+                        <span class="emblem-flame">LEÓN • GUANAJUATO</span>
+                    </div>
+                </div>
+                <!-- Sello circular dorado en la esquina -->
+                <div class="stamp">AL<br><b>CARBÓN</b><br>100%</div>
+            </div>
+
+        </div>
+
+        <!-- Franja inferior del Hero con datos clave -->
+        <div class="hero-bottom">
+            <span>COL. PILETAS • LEÓN, GTO.</span>
+            <span>JUEVES A LUNES • 8:00 AM A 11:00 PM</span>
+            <span>PEDIDOS DIRECTOS POR WHATSAPP</span>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         3. ESPECIALIDADES / JOYAS DE LA CASA (Platillos estrella)
+         Afecta: Las tarjetas destacadas con precios y descripciones
+         ===================================================================== -->
+    <section id="especialidades" class="specialties section-pad">
+        <div class="container">
+            <!-- Encabezado de esta sección -->
+            <div class="section-heading">
+                <p class="eyebrow">Lo más pedido de la parrilla</p>
+                <h2>LAS JOYAS DE <em>LA CASA</em></h2>
+                <p>Preparaciones especiales al momento con tortilla de harina, arrachera y queso gratinado.</p>
+            </div>
+
+            <!-- Cuadrícula de tarjetas de especialidades -->
+            <div class="special-grid">
+                
+                <!-- Tarjeta 1 (con clase 'featured' para resaltarla más en rojo) -->
+                <article class="special-card featured">
+                    <span class="card-tag">Más Pedido</span>
+                    <div class="food-icon">01</div>
+                    <div class="special-info">
+                        <h3>Chile Embarazado</h3>
+                        <p>Chile relleno de jugosa costilla y queso gratinado, envuelto en tocino dorado al carbón.</p>
+                        <strong>$50</strong>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="special-card featured">
+                    <span class="card-tag">Favorito</span>
+                    <div class="food-icon">02</div>
+                    <div class="special-info">
+                        <h3>Papa Rellena</h3>
+                        <p>Papa horneada rellena de arrachera asada, abundante queso gratinado y un toque de mantequilla.</p>
+                        <strong>$60</strong>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="special-card">
+                    <div class="food-icon">03</div>
+                    <div class="special-info">
+                        <h3>Taco de Camarón</h3>
+                        <p>Tortilla de harina con camarones sazonados, arrachera y queso gratinado.</p>
+                        <strong>$50</strong>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="special-card">
+                    <div class="food-icon">04</div>
+                    <div class="special-info">
+                        <h3>Taco de Pulpo</h3>
+                        <p>Tortilla de harina con pulpo a la parrilla, arrachera y queso gratinado.</p>
+                        <strong>$55</strong>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         4. MENÚ COMPLETO (Lista de precios por categoría)
+         Afecta: Los paneles con listas de platillos, líneas punteadas y precios
+         ===================================================================== -->
+    <section id="menu" class="menu-section section-pad">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Precios claros y sin sorpresas</p>
+                <h2>NUESTRO <em>MENÚ</em></h2>
+                <p>Elige tu corte o preparación favorita.</p>
+            </div>
+
+            <!-- Cuadrícula de 2 columnas con las categorías del menú -->
+            <div class="menu-grid">
+                
+                <!-- Categoría 1: Carne Asada -->
+                <div class="menu-panel">
+                    <div class="menu-title">
+                        <span class="menu-symbol">01</span>
+                        <div>
+                            <h3>Especialidades de Carne Asada</h3>
+                            <small>Arrachera • Picaña • Chorizo Argentino • Rib Eye • Sirloin</small>
+                        </div>
+                    </div>
+                    <!-- Cada <li> es un renglón: <span> nombre, <i> línea punteada, <b> precio -->
+                    <ul class="price-list">
+                        <li><span>Tacos</span><i></i><b>$25</b></li>
+                        <li><span>Torta</span><i></i><b>$35</b></li>
+                        <li><span>Torta con Queso</span><i></i><b>$40</b></li>
+                        <li><span>Quesadilla (Chica)</span><i></i><b>$35</b></li>
+                        <li><span>Quesadilla (Grande)</span><i></i><b>$80</b></li>
+                        <li><span>Volcanes</span><i></i><b>$35</b></li>
+                        <li><span>Parrillada</span><i></i><b>$150</b></li>
+                        <li><span>Orden de Abujitas</span><i></i><b>$140</b></li>
+                    </ul>
+                </div>
+
+                <!-- Categoría 2: Lo Clásico -->
+                <div class="menu-panel">
+                    <div class="menu-title">
+                        <span class="menu-symbol">02</span>
+                        <div>
+                            <h3>Lo Clásico</h3>
+                            <small>Bistec • Chorizo • Costilla • Cabeza</small>
+                        </div>
+                    </div>
+                    <ul class="price-list">
+                        <li><span>Tacos</span><i></i><b>$18</b></li>
+                        <li><span>Torta</span><i></i><b>$28</b></li>
+                        <li><span>Torta con Queso</span><i></i><b>$33</b></li>
+                        <li><span>Quesadilla (Chica)</span><i></i><b>$28</b></li>
+                        <li><span>Quesadilla (Grande)</span><i></i><b>$65</b></li>
+                        <li><span>Volcanes</span><i></i><b>$28</b></li>
+                        <li><span>Quesabirrias (Maíz)</span><i></i><b>$35</b></li>
+                        <li><span>Choriqueso</span><i></i><b>$120</b></li>
+                    </ul>
+                </div>
+
+                <!-- Categoría 3: Tripa y Lengua -->
+                <div class="menu-panel">
+                    <div class="menu-title">
+                        <span class="menu-symbol">03</span>
+                        <div>
+                            <h3>Especialidad de Tripa y Lengua</h3>
+                            <small>Doradita o suave, preparada al momento</small>
+                        </div>
+                    </div>
+                    <ul class="price-list">
+                        <li><span>Tacos</span><i></i><b>$25</b></li>
+                        <li><span>Torta</span><i></i><b>$35</b></li>
+                        <li><span>Torta con Queso</span><i></i><b>$40</b></li>
+                        <li><span>Quesadilla (Chica)</span><i></i><b>$35</b></li>
+                        <li><span>Quesadilla (Grande)</span><i></i><b>$80</b></li>
+                        <li><span>Volcán</span><i></i><b>$35</b></li>
+                    </ul>
+                </div>
+
+                <!-- Categoría 4: Bebidas -->
+                <div class="menu-panel">
+                    <div class="menu-title">
+                        <span class="menu-symbol">04</span>
+                        <div>
+                            <h3>Bebidas Bien Frías</h3>
+                            <small>Coca-Cola • Fanta • Sprite • Fresca • Manzanita • Jugo del Valle</small>
+                        </div>
+                    </div>
+                    <ul class="price-list">
+                        <li><span>Refrescos y Jugo (Vidrio)</span><i></i><b>$25</b></li>
+                        <li><span>Refresco 400 ml</span><i></i><b>$20</b></li>
+                        <li><span>Refresco 355 ml Sin Azúcar</span><i></i><b>$18</b></li>
+                    </ul>
+                </div>
+
+            </div>
+            <p class="menu-note">* Precios expresados en Pesos Mexicanos (MXN). Sujetos a disponibilidad.</p>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         5. UBICACIÓN, HORARIOS Y REDES SOCIALES
+         Afecta: La dirección, los horarios, links a redes y el mapa de Google
+         ===================================================================== -->
+    <section id="ubicacion" class="visit-section section-pad">
+        <div class="container visit-layout">
+            
+            <!-- Columna izquierda: Datos de contacto -->
+            <div class="visit-copy">
+                <p class="eyebrow">Te esperamos en León, Guanajuato</p>
+                <h2>VISÍTANOS O <em>PIDE EN LÍNEA</em></h2>
+
+                <!-- Bloque de dirección -->
+                <div class="visit-detail">
+                    <div class="detail-icon">DIR</div>
+                    <div>
+                        <b>Dirección Exacta</b>
+                        <p>Calle Badajoz #2100, Col. Piletas, León, Guanajuato.</p>
+                        <p class="map-link">
+                            <a href="https://maps.google.com/?q=Calle+Badajoz+2100+Col+Piletas+Leon+Guanajuato" target="_blank">Abrir ruta en Google Maps →</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloque de horarios -->
+                <div class="visit-detail">
+                    <div class="detail-icon">HRS</div>
+                    <div>
+                        <b>Horario de Atención</b>
+                        <p>Jueves a Lunes: 8:00 AM a 11:00 PM</p>
+                        <small>Martes y Miércoles descansamos</small>
+                    </div>
+                </div>
+
+                <!-- Bloque de redes sociales -->
+                <div class="visit-detail">
+                    <div class="detail-icon">RED</div>
+                    <div>
+                        <b>Redes Sociales Oficiales</b>
+                        <p class="socials">
+                            <a href="https://www.facebook.com/profile.php?id=61590137716162" target="_blank">Facebook</a>
+                            <a href="https://www.tiktok.com/@elcompabuka" target="_blank">TikTok (@elcompabuka)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Mapa interactivo embebido -->
+            <div class="map-card">
+                <div class="map-label">📍 MAPA DE UBICACIÓN • COL. PILETAS</div>
+                <iframe 
+                    src="https://www.google.com/maps?q=Calle+Badajoz+2100,+Piletas,+Leon,+Guanajuato&output=embed" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación Taquería El Compa Buka">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         6. FRANJA FINAL DE CONVERSIÓN (Último llamado a pedir)
+         Afecta: El banner rojo/naranja antes del pie de página
+         ===================================================================== -->
+    <section class="last-call">
+        <div class="container last-call-inner">
+            <div>
+                <p class="eyebrow">¿Se te antojaron unos de asada?</p>
+                <h2>HAZ TU PEDIDO DIRECTO POR WHATSAPP</h2>
+            </div>
+            <a href="https://wa.me/524770000000?text=Hola%20Compa%20Buka,%20quiero%20hacer%20un%20pedido" target="_blank" class="btn btn-light">
+                Pedir Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         7. PIE DE PÁGINA (FOOTER) Y BOTÓN FLOTANTE DE WHATSAPP
+         Afecta: Los derechos de autor abajo y el botón verde flotante
+         ===================================================================== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Taquería "El Compa Buka" • Calle Badajoz #2100, Col. Piletas, León, Gto.</p>
+            <a href="#inicio">Volver arriba ↑</a>
+        </div>
+    </footer>
+
+    <!-- Botón flotante que sigue al usuario en toda la pantalla -->
+    <a href="https://wa.me/524770000000?text=Hola%20Compa%20Buka,%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-float">
+        <span class="wa-symbol">WA</span> Pedir por WhatsApp
+    </a>
+
+</body>
+</html>
